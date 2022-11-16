@@ -1,0 +1,103 @@
+// create users
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name" : "qonita",
+  "email" : "qonita@gmail.com",
+  "password" : "yaha",
+  "confPassword" : "yaha",
+  "role" : "user"
+
+}
+
+// get all users
+###
+GET http://localhost:3000/users
+
+// get single user by id
+###
+GET http://localhost:3000/users/253cae1c-5888-4c69-9bad-c37b2d62f54b
+
+// update users
+###
+PUT http://localhost:3000/users/2954ebad-b576-4d62-ac96-e44dddd955c7
+Content-Type: application/json
+
+{
+  "name" : "Qonita",
+  "email" : "qonita@gmail.com",
+  "password" : "123456",
+  "confPassword" : "123456",
+  "role" : "user"
+
+}
+
+// delete user
+###
+DELETE http://localhost:3000/users/9f7a6117-e0ab-47a0-9492-7c1c28d97614
+
+
+// login users
+###
+GET http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "email" : "qonita@gmail.com",
+  "password" : "123456"
+}
+
+
+// login admin
+###
+GET http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "email" : "admin@gmail.com",
+  "password" : "123456"
+}
+
+// check siapa yg lg login
+###
+GET http://localhost:3000/me
+
+
+// logout
+###
+DELETE http://localhost:3000/logout
+
+
+// get all products
+###
+GET http://localhost:3000/products
+
+// get single products
+###
+GET http://localhost:3000/products/39a17bd5-c410-409c-a8ae-91ea2002f500
+
+// post products
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name" : "Product 99",
+  "price" : 9999
+}
+
+// update product
+###
+PUT http://localhost:3000/products/39a17bd5-c410-409c-a8ae-91ea2002f500
+Content-Type: application/json
+
+{
+  "name" : "Product 4 updated",
+  "price" : 4444
+}
+
+// delete single product
+###
+DELETE http://localhost:3000/products/eda1bbfe-f14f-4db6-a8d8-d0128eb07a6d
