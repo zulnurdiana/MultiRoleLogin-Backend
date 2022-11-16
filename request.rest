@@ -4,10 +4,10 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-  "name" : "qonita",
-  "email" : "qonita@gmail.com",
-  "password" : "yaha",
-  "confPassword" : "yaha",
+  "name" : "shakira",
+  "email" : "shakira@gmail.com",
+  "password" : "123456",
+  "confPassword" : "123456",
   "role" : "user"
 
 }
@@ -26,8 +26,8 @@ PUT http://localhost:3000/users/2954ebad-b576-4d62-ac96-e44dddd955c7
 Content-Type: application/json
 
 {
-  "name" : "Qonita",
-  "email" : "qonita@gmail.com",
+  "name" : "shakira",
+  "email" : "shakira@gmail.com",
   "password" : "123456",
   "confPassword" : "123456",
   "role" : "user"
@@ -45,7 +45,7 @@ GET http://localhost:3000/login
 Content-Type: application/json
 
 {
-  "email" : "qonita@gmail.com",
+  "email" : "shakira@gmail.com",
   "password" : "123456"
 }
 
